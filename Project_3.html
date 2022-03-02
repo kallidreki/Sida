@@ -56,32 +56,41 @@
 								<h3>Hönnunarforsendur</h3>
 								<p>
 									<ul>
-										<li>skannaðu hvað sem er</li>
-										<li>Bara ein litur</li>
-										
+										<li>skannaðu hvað sem er</li>						
 									</ul>
 								</p>
 								<h3>Hugbúnaður</h3>
-								<p>Við framkvæmd skurðarins var notað:
+								<p>Við framkvæmd skönnunarinnar var notað:
 									<ul>
-										<li>photogrammetríu<a href="https://inkscape.org"> hér </a></li>
+										<li>3DF Zephyr<a href="https://www.3dflow.net/"> hér </a></li>
 									</ul>
 								</p>
-								<h3>Hugmyndavinna</h3>
+								<h3>Val á forriti</h3>
 								<p>
-									Til að byrja verkefnið fór ég að Google hugmyndir til að skera út. En fann ekkert sem mér leist vel á. Eftir það kom up hugmynd um að skera út heimadæmi en það hefði endað of smátt svo ég endaði á að finna Mandel brot settið á netinu sem ég fékk <a href="https://www.math.univ-toulouse.fr/~cheritat/wiki-draw/index.php/"> héðan </a>. </p>
-									<div class="image fit"><img src="images/Mandelbrot.png" ></div>
-									<h3>Undirbúnningur</h3>
-									<p>
-										Með myndina vistaða fór ég yfir í Inkscape þar sem ég opnaði myndina af Mandel brot settinu. Inn í Inkscape notaði ég Trace Bitmap til að ná útlínunum af Mandelbrot settinu. Etir það eyddi ég myndinni og hafði þá bara Mandelbrot settið eftir. Þá opnaði ég Fill and Stoke til að taka fyllinguna úr myndinni og hafa bara útlínurnar eftir sem ég stillti á 0,02 mm þykkt. Þá vistaði ég myndina sem PDF til að senda yfir í vínilskerann.
-									</p>
-									
-									<div class="image fit"><img src="images/0001.jpg" ></div>
-	
-									<p>Á skeranum sjálfum skipti ég um efni yfir í rautt. Eftir það stilti hjólin á skeranum svo þau séu við brún efnisins. Eftir það Ctrl+P á PDF skjalið þar sem ég gat stillt stærð Mandelbrot settsins miða við stærð efnisins sem ég notaði og byrjað skurðinn.</p>
-									<div class="image fit"><img src="images/vinil.jpg" ></div>
+									Til að byrja með fór ég að skoða á reddit hvað fólk mælir með og datt inn á <a href="https://www.reddit.com/r/3DScanning/comments/mi6rmw/is_there_a_decent_app_for_3d_scanning/"> þetta </a>. Þar sem mælt var með appi sem heitir 3D Live Scanner sem virkaði ekki þar sem það náði ekki almennilega að aðgreina borðið sem ég tók myndirnar á við hlutinn. En það gerðist bara í það skipti sem það kláraði keyrsluna þar sem það missti tengingu við eitthvern sever sem keyrði skönnunina í 80% sem varð þreytt. 
 								</p>
-
+								<p>Eftir þetta ákvað ég að það væri best að taka myndirnar á símann og skanna þær í tölvunni og ákvað að læra því aðeins á 3DF Zephyr. Til þess horfði ég á myndband frá <a href="https://www.3dflow.net/technology/documents/3df-zephyr-tutorials/">þeim</a> og leiðbeningar sem voru á síðunni <a href="https://www.3dflow.net/technology/documents/3df-zephyr-tutorials/convert-photos-3d-models-3df-zephyr/">þeirra.</a></p>
+								<h3>Val á hlut</h3>
+								<p>
+									Byrja á að velja hlut. Ég vildi gera hlut sem hefur mjög breytilegt útlit og heslt enga simmetríu til að forritið áttissig betur á hvernig hluturinn er í laginu og tengi saman myndirnar. Ég valdi styttu úr áli sem heitir Þór og er frá 1978. Ég laggði styttyna á eldhúsborðið undir ljósi og tók 46 myndir úr öllum áttum af styttunni. En þegar ég fór að skanna han gat forritið ekki lesið hann inn sem þrívíðan hlut. Þannig ég ákvað að skanna frekar inn jóla ora bjór sem tókst mun betur en samt ekki nógu vel og er ég komin með kenningu um að forritið neiti að skanna ál en glampin af áli gæti haft eitthver áhrif. Þannig að ég fann styttu af skipi sem ég skannaði inn og það tókst mjög vel.
+								</p>
+								<div class="image fit"><img src="images/ora.png" ></div>
+								<h3>Skönnun í 3DF Zephyr </h3>
+								<p>Það fyrsta sem ég þurfti að gera er að taka myndir af skipinu og tók ég 50 myndir sem er það mesta sem má fyrir frían aðgang.</p>
+								<div class="image fit"><img src="images/mynd_bat.jpg" ></div>
+								<p>Í 3DF Zephyr byrjaði ég að að búa til nýtt verkefni þar sem ég hafði allt stillt í Default eins og leiðbeningarnar frá síðunni þeirra mældu með. Ég setti svo inn allar myndirnar og hafði allt enþá stillt á Default. Næst sakannaði forritið allar mydnirnar og reyndi að tengja saman punkta á milli þeirra og gera gróft punkta net með tengingum. </p>
+								<div class="image fit"><img src="images/groft_punkt.jpg" ></div>
+								<p>Þá fer í efst þar sem allar keyrslur eru</p>	
+								<div class="image fit"><img src="images/stillingar.jpg" ></div>
+								<p>Hér vel ég Dense Point Cloud Generation til að þétta punktanetið. Allar stillingar eru Default eins og mælt var með í leiðbeningonum.</p>
+								<div class="image fit"><img src="images/thett_punkt.jpg" ></div>
+								<p>Þá er farið aftur efst og valið Mesh Extraction sem býr til net milli punktanna. Allar stillingar eru Default eins og mælt var með í leiðbeningonum.</p>
+								<div class="image fit"><img src="images/mesh_1.jpg" ></div>
+								<p>Þá er farið aftur efst og valið Textured Mesh Generation sem skilar flottu 3D líkani af bátinum. Allar stillingar eru Default eins og mælt var með í leiðbeningonum.</p>
+								<div class="image fit"><img src="images/mesh_2.jpg" ></div>
+								<p>Þá endaði ég með flott þvívítt líkan af bátinum.</p>
+									
+	
 
 
 	
